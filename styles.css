@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    background: #333333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Responsive navigation styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu-toggle i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul.showing {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.hero {
+    padding-top: 70px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+section h3 {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    background: #f4f4f4;
+    border-left: 5px solid #333;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    margin-bottom: 1.5rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list li i {
+    margin-right: 0.5rem;
+}
+
+form {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #555;
+}
+
+.social-media {
+    margin-top: 2rem;
+}
+
+.social-media h3 {
+    margin-bottom: 1rem;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-list li {
+    margin-right: 1rem;
+}
+
+.social-list li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
